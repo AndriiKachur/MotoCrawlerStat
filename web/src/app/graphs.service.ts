@@ -12,4 +12,8 @@ export class GraphsService {
     return this.http.get('/allMotoDistribution');
   }
 
+  getAllMotoManufacturers() {
+    return this.http.get('/manufacturers')
+  }
+
 }

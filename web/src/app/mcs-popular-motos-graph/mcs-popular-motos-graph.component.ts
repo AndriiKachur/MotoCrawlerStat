@@ -33,6 +33,10 @@ export class McsAllMotosDistributionGraphComponent implements OnInit, AfterViewI
 
     data.sort((e1, e2) => e1._id.localeCompare(e2._id));
 
+    var gradient = ctx.createLinearGradient(0, 0, 600, 0);
+    gradient.addColorStop(0, 'rgba(250, 174, 50, 0)');
+    gradient.addColorStop(1, 'rgba(250, 174, 50, 1)');
+
     this.chart = new Chart(ctx, {
       type: 'horizontalBar',
       data: {
@@ -40,7 +44,7 @@ export class McsAllMotosDistributionGraphComponent implements OnInit, AfterViewI
         datasets: [{
           label: `Popular motos # by manufacturer`,
           data: data.map(e => e.count),
-          backgroundColor: `rgba(255, 159, 64, 0.7)`
+          backgroundColor: gradient
         }]
       }
     });

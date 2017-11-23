@@ -1,0 +1,12 @@
+<div class="form-group">
+  <label>
+    Choose a manufacturer to see statistics
+
+    <select name="" id="" class="inline"
+      [(ngModel)]="manufacture">
+
+      <option *ngFor="let m of manufacturers" [value]="m">{{m}}</option>
+    </select>
+
+  </label>
+</div>

@@ -46,4 +46,16 @@ app.get('/allMotoDistribution', async function (req, res) {
     res.send(resp);
 });
 
+app.get('/manufacturers', async function (req, res) {
+    let labels = await motoCollection.aggregate([
+        {
+            $group: {
+                _id: '$manufacture'
+            }
+        }
+    ]).toArray();
+
+    res.send(labels);
+});
+
 app.listen(3000);
