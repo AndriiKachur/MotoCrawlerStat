@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { McsAllMotosDistributionGraphComponent } from './mcs-all-motos-distribution-graph.component';
+import { McsAllMotosDistributionGraphComponent } from './mcs-popular-motos-graph.component';
 
 describe('McsAllMotosDistributionGraphComponent', () => {
   let component: McsAllMotosDistributionGraphComponent;

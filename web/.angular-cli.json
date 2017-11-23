@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "motocrawlerstat"
+    "name": "web"
   },
   "apps": [
     {
@@ -22,7 +22,7 @@
         "styles.scss"
       ],
       "scripts": [
-        "../node_modules/d3/build/d3.js"
+
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

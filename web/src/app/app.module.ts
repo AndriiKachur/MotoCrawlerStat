@@ -6,7 +6,7 @@ import {GraphsService} from "./graphs.service";
 
 
 import { AppComponent } from './app.component';
-import { McsAllMotosDistributionGraphComponent } from './mcs-all-motos-distribution-graph/mcs-all-motos-distribution-graph.component';
+import { McsAllMotosDistributionGraphComponent } from './mcs-popular-motos-graph/mcs-popular-motos-graph.component';
 
 
 @NgModule({

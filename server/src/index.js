@@ -21,10 +21,10 @@ MongoClient.connect(url, function(err, db) {
 
 
 
-app.use(express.static(path.join(__dirname, '../../web/motocrawlerstat/dist/')));
+app.use(express.static(path.join(__dirname, '../../web/dist/')));
 
 app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname, '../../web/motocrawlerstat/dist/index.html'));
+    res.sendFile(path.join(__dirname, '../../web/dist/index.html'));
 });
 
 app.get('/allMotoDistribution', async function (req, res) {
